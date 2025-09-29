@@ -17,9 +17,6 @@ Android app for browsing Formula 1 data including driver standings, constructor 
 - UI: **View Binding**
 - Asynchronous programming: **Coroutines & Flow**
 
-## Getting Started
-If you want to try out the app, you can just download the f1-app.apk from .apk/
-
 ## License
 Educational project for learning Android development.
 
