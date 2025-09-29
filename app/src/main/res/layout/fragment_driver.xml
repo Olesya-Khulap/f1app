@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/driver_screen_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige_main">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/driver_image_slider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_back_light" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/red_main"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/driver_flag"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:contentDescription="Flag"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="12dp"/>
+
+        <TextView
+            android:id="@+id/driver_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_extrabold"
+            android:text="Driver Name"
+            android:textColor="@color/red_main"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="4dp"
+        android:textColor="@color/dark_blue_main"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Number: "
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvBirthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="4dp"
+        android:textColor="@color/dark_blue_main"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Birthday: "
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvTeam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="4dp"
+        android:textColor="@color/dark_blue_main"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Team: "
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvPoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="4dp"
+        android:textColor="@color/dark_blue_main"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Points in 2025: "
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvWins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="4dp"
+        android:textColor="@color/dark_blue_main"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Wins in 2025: "
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="4dp"
+        android:textColor="@color/dark_blue_main"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Position in 2025: "
+        android:textSize="20sp"/>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="beige_main">#F0EDDC</color>
+    <color name="blue_main">#777E90</color>
+    <color name="dark_blue_main">#272B36</color>
+    <color name="dark_blue_main_50">#80272B36</color>
+    <color name="red_main">#8F0B13</color>
+    <color name="calendar_item_bg">#FBF9F2</color>
+
+    <color name="mclaren_color">#F87149</color>
+    <color name="ferrari_color">#871A31</color>
+    <color name="mercedes_color">#50C3B2</color>
+    <color name="red_bull_color">#04284A</color>
+    <color name="williams_color">#0C3D7B</color>
+    <color name="racing_bulls_color">#3F56BF</color>
+    <color name="haas_color">#DC2449</color>
+    <color name="sauber_color">#47DC48</color>
+    <color name="aston_martin_color">#01665E</color>
+    <color name="alpine_color">#D674A0</color>
+
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.tools/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.f1app2.presentation.ui.fragment.MainFragment"
+        android:label="F1 App"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_mainFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_driversStandingsFragment"
+            app:destination="@id/driversStandingsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_teamsStandingsFragment"
+            app:destination="@id/teamsStandingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.f1app2.presentation.ui.fragment.CalendarFragment"
+        android:label="Calendar 2025"
+        tools:layout="@layout/fragment_calendar">
+
+        <action
+            android:id="@+id/action_calendarFragment_to_circuitFragment"
+            app:destination="@id/circuitFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/driversStandingsFragment"
+        android:name="com.example.f1app2.presentation.ui.fragment.DriversStandingsFragment"
+        android:label="Drivers Standings 2025"
+        tools:layout="@layout/fragment_drivers_standings">
+
+        <action
+            android:id="@+id/action_driversStandingsFragment_to_driverFragment"
+            app:destination="@id/driverFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/teamsStandingsFragment"
+        android:name="com.example.f1app2.presentation.ui.fragment.TeamsStandingsFragment"
+        android:label="Teams Standings 2025"
+        tools:layout="@layout/fragment_teams_standings">
+
+        <action
+            android:id="@+id/action_teamsStandingsFragment_to_teamFragment"
+            app:destination="@id/teamFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/driverFragment"
+        android:name="com.example.f1app2.presentation.ui.fragment.DriverFragment"
+        android:label="Driver Details"
+        tools:layout="@layout/fragment_driver">
+
+        <argument
+            android:name="driverId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/teamFragment"
+        android:name="com.example.f1app2.presentation.ui.fragment.TeamFragment"
+        android:label="Team Details"
+        tools:layout="@layout/fragment_team">
+
+        <argument
+            android:name="teamId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_teamFragment_to_teamsStandingsFragment"
+            app:destination="@id/teamsStandingsFragment" />
+        <action
+            android:id="@+id/action_teamFragment_to_driverFragment"
+            app:destination="@id/driverFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/circuitFragment"
+        android:name="com.example.f1app2.presentation.ui.fragment.CircuitFragment"
+        android:label="Circuit Details"
+        tools:layout="@layout/fragment_circuit">
+
+        <argument
+            android:name="raceId"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
